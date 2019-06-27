@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/darkGreyBlue">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vk"
+            android:layout_above="@id/introTextView"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/introTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_text"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:layout_marginEnd="@dimen/default_horizontal_margin"
+            android:textColor="@color/paleGrey"
+            android:textSize="@dimen/largeText"
+            />
+
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_rectangle"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_in"
+            android:textColor="@color/paleGrey"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:layout_marginEnd="@dimen/default_horizontal_margin"
+            android:layout_marginBottom="48dp"/>
+</RelativeLayout>

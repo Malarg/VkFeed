@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/postItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark">
+
+
+    <RelativeLayout
+            android:id="@+id/blocksContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:layout_height="40dp">
+
+        <com.malarg.vkfeed.core.customViews.WrapContentHeightViewPager
+                android:id="@+id/blocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"/>
+
+        <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blocks"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:padding="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/mainTextTextView"
+            style="@style/PostItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:layout_marginEnd="@dimen/default_horizontal_margin"
+            android:autoLink="web"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_below="@id/blocksContainer"
+            tools:text="@string/demo_text_long"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/linksRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@id/mainTextTextView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+            android:id="@+id/likeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/like"
+            android:layout_below="@+id/linksRecyclerView"
+            app:srcCompat="@drawable/ic_like"/>
+
+    <TextView
+            android:id="@+id/likesCountTV"
+            style="@style/PostCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            tools:text="0"
+            android:layout_toEndOf="@+id/likeIcon"
+            android:layout_below="@id/linksRecyclerView"/>
+
+    <ImageView
+            android:id="@+id/commentIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:contentDescription="@string/comment"
+            android:layout_toEndOf="@+id/likesCountTV"
+            android:layout_below="@id/linksRecyclerView"
+            app:srcCompat="@drawable/ic_comment"/>
+
+    <TextView
+            android:id="@+id/commentsCountTV"
+            style="@style/PostCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription=""
+            tools:text="0"
+            android:layout_toEndOf="@+id/commentIcon"
+            android:layout_below="@id/linksRecyclerView"/>
+
+    <TextView
+            android:id="@+id/postDate"
+            style="@style/PostDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="@dimen/default_horizontal_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/linksRecyclerView"
+            tools:text="@string/demo_text"/>
+
+    <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/default_horizontal_margin"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/default_horizontal_margin"
+            android:layout_marginBottom="8dp"
+            android:background="@color/darkGreyBlue"
+            android:layout_below="@+id/postDate"/>
+
+</RelativeLayout>

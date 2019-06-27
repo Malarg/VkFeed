@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PostItem">
+        <item name="android:textSize">@dimen/largeText</item>
+        <item name="android:textColor">@color/paleGrey</item>
+    </style>
+
+    <style name="PostSubItem">
+        <item name="android:textSize">@dimen/smallText</item>
+        <item name="android:textColor">@color/blueGrey</item>
+    </style>
+
+    <style name="PostAttachmentText">
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:textColor">@color/paleGrey</item>
+    </style>
+
+    <style name="PostDate">
+        <item name="android:textSize">@dimen/smallText</item>
+        <item name="android:textColor">@color/coolGrey</item>
+    </style>
+
+    <style name="PostCounter">
+        <item name="android:textSize">@dimen/largeText</item>
+        <item name="android:textColor">@color/paleGrey</item>
+    </style>
+</resources>

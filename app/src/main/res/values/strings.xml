@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">VkFeed</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro_text">Приложение было создано исключительно для того, чтобы показать навыки его создателя и не
+        является коммерческим.
+    </string>
+    <string name="sign_in">Войти</string>
+    <integer name="com_vk_sdk_AppId">7029154</integer>
+    <string name="vk_authorization">Authorization</string>
+    <string name="vk_arg_1">arg1</string>
+    <string name="vk_arg_2">arg2</string>
+    <string name="vk_arg_4">arg4</string>
+    <string name="demo_text">Demo text</string>
+    <string name="demo_text_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="avatar">Avatar</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="january">января</string>
+    <string name="february">февраля</string>
+    <string name="march">марта</string>
+    <string name="april">апреля</string>
+    <string name="may">мая</string>
+    <string name="june">июня</string>
+    <string name="july">июля</string>
+    <string name="august">августа</string>
+    <string name="september">сентября</string>
+    <string name="october">октября</string>
+    <string name="november">ноября</string>
+    <string name="december">декабря</string>
+    <string name="yesterday_in">Вчера в %s</string>
+    <string name="today_in">Сегодня в %s</string>
+</resources>

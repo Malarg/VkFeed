@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="darkGreyBlue">#354052</color>
+    <color name="paleGrey">#f1f4f8</color>
+    <color name="blueGrey">#7f8fa4</color>
+    <color name="azure">#279df4</color>
+    <color name="coolGrey">#a8aab7</color>
+    <color name="dark">#222732</color>
+    <color name="pinkyRed">#ff1744</color>
+</resources>
